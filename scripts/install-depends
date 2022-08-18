@@ -17,4 +17,3 @@ source $(poetry env info --path)/env/bin/activate
 poetry install
 
 python3 main.py
-python3 main.py
