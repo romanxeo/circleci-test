@@ -12,10 +12,8 @@ source $HOME/.poetry/env
 
 poetry install
 
-poetry env info
+source $(poetry env info --path)/bin/activate
 
-echo $(poetry env info --path)
-
-echo $(poetry env info --path)/bin/activate
+poetry install
 
 python3 main.py
