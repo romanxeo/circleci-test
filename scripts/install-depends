@@ -16,4 +16,6 @@ poetry install
 
 source $(poetry env info --path)/bin/activate
 
+cd $(poetry env info --path)/bin
+
 python main.py
