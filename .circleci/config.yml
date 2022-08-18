@@ -10,17 +10,17 @@ jobs:
     - run:
         name: install
         command: |
-        apk add docker
+        apk add docker |
         apk add --no-cache python3 py3-pip
     - run:
           name: python v
           command: |
-          python3 --version
+          python3 --version |
           docker --version
 
   report:
     docker:
-      - image: circleci/python:3.1
+      - image: circleci/python:3.10
     working_directory: ~/repo
     steps:
       - run:
