@@ -10,11 +10,11 @@ jobs:
     - run:
         name: install
         command: |
-        apk add docker \
-        apk add --no-cache python3 py3-pip
+          apk add docker \
+          apk add --no-cache python3 py3-pip
     - run:
-          name: python v
-          command: |
+        name: python v
+        command: |
           python3 --version \
           docker --version
 
