@@ -11,7 +11,7 @@ jobs:
         name: install
         command: |
           apk add docker \
-          apk add --no-cache python3
+          docker --version
     - run:
         name: python v
         command: |
