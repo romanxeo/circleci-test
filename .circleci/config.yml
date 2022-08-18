@@ -15,10 +15,10 @@ jobs:
         command: docker --version
     - run:
         name: python v
-        command: apk add python3.10
+        command: apk add --no-cache python3 py3-pip
     - run:
           name: python v
-          command: python --version
+          command: python3 --version
 
   report:
     docker:
