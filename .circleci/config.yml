@@ -9,10 +9,10 @@ jobs:
     - checkout
     - run:
         name: docker v
-        command: apt-get install -y --no-install-recommends docker
+        command: apk add docker
     - run:
         name: python v
-        command: apt-get install -y --no-install-recommends python
+        command: apk add python
     - run:
           name: docker v
           command: docker --version
