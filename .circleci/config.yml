@@ -11,11 +11,11 @@ jobs:
         name: docker v
         command: apk add docker
     - run:
+        name: docker v
+        command: docker --version
+    - run:
         name: python v
         command: apk add python
-    - run:
-          name: docker v
-          command: docker --version
     - run:
           name: python v
           command: python --version
