@@ -1,6 +1,3 @@
 #!/bin/sh
 
-python3 --version
 pip3 --version
-py3-pip --version
-docker --version
