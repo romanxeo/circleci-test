@@ -19,7 +19,7 @@ jobs:
     - checkout
     - run:
         name: permission
-        command: chmod 777 -R ./scripts
+        command: chmod +x -R ./scripts
     - run:
         name: install depends
         command: scripts/install-depends

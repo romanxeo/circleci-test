@@ -2,15 +2,19 @@
 
 apk add docker
 apk add --no-cache python3 py3-pip
-apk add curl
+#apk add curl
 
-curl --version
+#curl --version
 
-curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python3
+#curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python3
 
-source $HOME/.poetry/env
+#source $HOME/.poetry/env
 
-poetry env info
+#poetry env info
+
+pip3 install poetry
+
+#poetry config virtualenvs.create false
 
 poetry install
 
