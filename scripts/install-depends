@@ -21,7 +21,3 @@ poetry env info
 cd $(poetry env info --path)/bin
 
 ls
-
-uvicorn --version
-
-python main.py
