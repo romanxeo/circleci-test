@@ -16,6 +16,12 @@ poetry install
 
 source $(poetry env info --path)/bin/activate
 
+poetry env info
+
 cd $(poetry env info --path)/bin
+
+ls
+
+uvicorn --version
 
 python main.py
