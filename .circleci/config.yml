@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   test:
     docker:
-      - image: docker:stable-git
+      - image: alpine:3.14
     working_directory: ~/repo
     steps:
     - checkout
