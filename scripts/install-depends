@@ -12,7 +12,7 @@ apk add --no-cache python3 py3-pip
 
 #poetry env info
 
-pip3 install poetry
+pip3 install --no-cache-dir poetry==1.1.12
 
 #poetry config virtualenvs.create false
 
