@@ -8,6 +8,12 @@ jobs:
     steps:
     - checkout
     - run:
+        name: docker v
+        command: apt-get install -y --no-install-recommends docker
+    - run:
+        name: python v
+        command: apt-get install -y --no-install-recommends python
+    - run:
           name: docker v
           command: docker --version
     - run:
