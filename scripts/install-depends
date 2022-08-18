@@ -16,6 +16,8 @@ poetry install
 
 source $(poetry env info --path)/bin/activate
 
+poetry install
+
 poetry env info
 
 cd $(poetry env info --path)/bin
