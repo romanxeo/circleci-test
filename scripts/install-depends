@@ -1,5 +1,5 @@
 #!/bin/sh
 
-sudo apk add docker
+apk add docker
 
-sudo apk add --no-cache python3 py3-pip
+apk add --no-cache python3 py3-pip
