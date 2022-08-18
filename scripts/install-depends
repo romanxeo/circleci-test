@@ -12,10 +12,16 @@ source $HOME/.poetry/env
 
 poetry env info
 
-poetry config settings.virtualenvs.create false
+poetry install
+
+source $(poetry env info --path)/bin/activate
 
 poetry install
 
 poetry env info
 
-python3 main.py
+poetry env list --full-path
+
+cd $(poetry env info --path)/bin
+
+ls
