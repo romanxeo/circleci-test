@@ -16,12 +16,12 @@ poetry install
 
 source $(poetry env info --path)/bin/activate
 
-sudo poetry install
+poetry install
 
 poetry env info
 
 poetry env list --full-path
 
-cd $(poetry env info --path)/bin
+cd $(poetry env info --path)/lib
 
 ls
