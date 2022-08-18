@@ -12,11 +12,11 @@ source $HOME/.poetry/env
 
 poetry env info
 
-poetry install
+poetry install --no-root
 
 source $(poetry env info --path)/bin/activate
 
-poetry install
+poetry install --no-root
 
 poetry env info
 
