@@ -14,8 +14,8 @@ poetry install
 
 poetry env info
 
-source $(poetry env info --path)/bin/activate
+echo $(poetry env info --path)
 
-poetry env info
+echo $(poetry env info --path)/bin/activate
 
 python3 main.py
