@@ -15,7 +15,7 @@ jobs:
         command: docker --version
     - run:
         name: python v
-        command: apk add python
+        command: apk add python3.10
     - run:
           name: python v
           command: python --version
