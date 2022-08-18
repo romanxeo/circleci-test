@@ -12,6 +12,6 @@ source $HOME/.poetry/env
 
 poetry --version
 
-pip3 install -R requirements.txt
+pip3 install -r requirements.txt
 
 python3 main.py
