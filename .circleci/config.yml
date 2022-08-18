@@ -5,6 +5,10 @@ aliases:
       run:
         name: install depends
         command: scripts/install-depends
+  - &run-tests
+      run:
+        name: run tests
+        command: scripts/run-tests
 
 jobs:
   test:
@@ -20,10 +24,8 @@ jobs:
         name: install depends
         command: scripts/install-depends
     - run:
-        name: python v
-        command: |
-          python3 --version \
-          docker --version
+        name: run tests
+        command: scripts/run-tests
 
   report:
     docker:
