@@ -12,17 +12,9 @@ source $HOME/.poetry/env
 
 poetry env info --path
 
-source $(poetry env info --path)/bin/activate
-
-poetry env info --path
-
 poetry install
 
-poetry env info --path
-
 source $(poetry env info --path)/bin/activate
-
-poetry install
 
 poetry env info --path
 
