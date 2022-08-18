@@ -14,6 +14,9 @@ poetry --version
 
 pip3 install -r requirements.txt
 
-source venv/bin/activate
+ls
+
+
+fastapi --version
 
 python3 main.py
