@@ -12,4 +12,8 @@ source $HOME/.poetry/env
 
 poetry install
 
-python3 main.py
+ls
+
+cd ..
+
+ls
