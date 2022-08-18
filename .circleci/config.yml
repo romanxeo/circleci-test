@@ -1,11 +1,5 @@
 version: 2.1
 
-aliases:
-  - &install-dep
-      run:
-        name: install depends
-        command: scripts/install-depends
-
 jobs:
   test:
     docker:
@@ -15,7 +9,7 @@ jobs:
     - checkout
     - run:
         name: install dep
-        command: scripts/install-dep
+        command: scripts/install-depends
     - run:
         name: python v
         command: |
