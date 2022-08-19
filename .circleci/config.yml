@@ -9,7 +9,7 @@ aliases:
 jobs:
   test:
     machine:
-      image: ubuntu-2004:202201-20
+      image: ubuntu-2004:202201-02
     steps:
     - checkout
     - run:
