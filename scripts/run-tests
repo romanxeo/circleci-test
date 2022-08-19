@@ -10,21 +10,7 @@ docker-compose --version
 
 ls
 
-rc-update add docker boot
-service docker start
-
-addgroup username docker
-
-docker pull ubuntu:latest
-
-
-docker run \
-  --name test_db \
-  -p 3307:3306 \
-  -e MYSQL_ROOT_PASSWORD=Password123 \
-  -e MYSQL_DATABASE=secc_test_actions \
-  mysql:8.0.29 \
-  --default-authentication-plugin=mysql_native_password
+docker-compose  -f docker-compose.test.yml up
 
 
 
