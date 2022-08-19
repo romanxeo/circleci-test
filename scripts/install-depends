@@ -30,7 +30,7 @@ poetry env info
 
 poetry env list --full-path
 
-cd $(poetry env info --path)/lib/python3.10/
+cd $(poetry env info --path)/lib/python3.10/site-packages/
 
 ls
 
