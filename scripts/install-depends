@@ -32,7 +32,9 @@ poetry export -f requirements.txt > requirements.txt
 
 cat requirements.txt
 
-python3 -m pip install --upgrade pip
+pip --version
+
+pip install --upgrade pip
 
 pip --version
 
