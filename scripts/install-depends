@@ -30,12 +30,16 @@ source $HOME/.poetry/env
 
 poetry export -f requirements.txt > requirements.txt
 
+cat requirements.txt
+
 python3 -m venv venv
 source venv/bin/activate
 
 pip3 download -r  requirements.txt
 
 ls
+
+
 
 python3 -m pytest
 
