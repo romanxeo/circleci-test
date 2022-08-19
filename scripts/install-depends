@@ -41,7 +41,7 @@ pip --version
 #python3 -m venv venv
 #source venv/bin/activate
 
-pip download -r  requirements.txt
+pip intsall -r  requirements.txt
 
 ls
 
