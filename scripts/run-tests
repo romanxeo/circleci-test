@@ -4,9 +4,9 @@ result=$(docker-compose -f docker-compose.test.yml up)
 
 echo $result
 
-#if [[ "${result: -1}" -eq "0" ]]; then
-#  echo "SUCCESS"
-#else
-#  echo "ERROR"
-#fi
+if [ "${result: -1}" -eq "0" ]; then
+  echo "SUCCESS"
+else
+  echo "ERROR"
+fi
 
