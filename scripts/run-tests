@@ -6,7 +6,7 @@ docker-compose --version
 
 ls
 
-docker --help
+rc-update add docker
 
 docker run \
   --name test_db \
