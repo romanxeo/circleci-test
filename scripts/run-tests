@@ -1,93 +1,13 @@
 #!/bin/sh
+cd ..
 
-#apk update
+result=$(sudo docker-compose -f docker-compose.test.yml up)
 
+echo $result
 
-#apk add docker docker-compose
-
-#docker --version
-#docker-compose --version
-
-#ls
-
-#chmod 666 /var/run/docker.sock
-
-docker-compose -f docker-compose.test.yml up
-
-if [ $# = 0 ]; then
-  echo "ONE"
+if [[ "${result: -1}" -eq "0" ]]; then
+  echo "SUCCESS"
 else
-  echo "TWO"
+  echo "ERROR"
 fi
-
-
-
-
-
-
-#docker --version
-#
-#curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python3 -
-#
-#source $HOME/.poetry/env
-#
-#poetry config virtualenvs.create true
-#
-#poetry install --no-dev
-#
-#source .venv/bin/activate
-#
-#ls
-#
-#cd .venv
-#
-#ls
-#
-#cd bin
-#
-#ls
-#
-#python3 -m pytest -s
-
-#poetry install
-
-#source $(poetry env info --path)/bin/activate
-
-#poetry env info
-
-#poetry env list --full-path
-
-#poetry show
-
-#poetry run python3 -m pytest -s
-
-#cd $(poetry env info --path)/lib/python3.10/site-packages/
-#cd $(poetry env info --path)/bin
-
-
-#pip3 install -r poetry.toml
-
-#poetry export -f requirements.txt > requirements.txt
-
-#cat requirements.txt
-
-#python3 -m venv venv
-#source venv/bin/activate
-
-#pip install -r  requirements.txt
-
-#ls
-
-
-
-#
-
-#ls
-
-#python3 main.py
-
-
-
-
-
 
