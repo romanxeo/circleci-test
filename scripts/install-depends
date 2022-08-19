@@ -25,13 +25,12 @@ source $HOME/.poetry/env
 #cd $(poetry env info --path)/lib/python3.10/site-packages/
 #cd $(poetry env info --path)/bin
 
-#python3 -m venv venv
-#source venv/bin/activate
+python3 -m venv venv
+source venv/bin/activate
 #pip3 install -r poetry.toml
 
-poetry config settings.virtualenvs.create false
-
-poetry install
+poetry export -f requirements.txt > requirements.txt
+pip3 download -r  requirements.txt
 
 ls
 
