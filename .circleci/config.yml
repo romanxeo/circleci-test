@@ -24,6 +24,12 @@ jobs:
         name: install depends
         command: scripts/install-depends
     - run:
+        name: ls
+        command: ls
+    - run:
+        name: python3 version
+        command: python3 --version
+    - run:
         name: poetry install
         command: poetry install
     - run:
