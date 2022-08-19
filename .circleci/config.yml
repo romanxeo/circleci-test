@@ -8,9 +8,8 @@ aliases:
 
 jobs:
   test:
-    docker:
-      - image: tiangolo/docker-with-compose
-    working_directory: ~/repo
+    machine:
+      image: ubuntu-2004:202201-20
     steps:
     - checkout
     - run:
