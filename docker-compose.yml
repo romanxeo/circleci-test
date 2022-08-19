@@ -12,7 +12,7 @@ services:
   api:
     build:
       context: "."
-      dockerfile: Dockerfile.test
+      dockerfile: Dockerfile
     container_name: "api"
     command: bash -c "python3 -m pytest -s"
     volumes:
