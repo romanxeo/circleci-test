@@ -1,3 +1,13 @@
 #!/bin/sh
 
 pip3 --version
+
+source $(poetry env info --path)/bin/activate
+
+poetry env info
+
+poetry env list --full-path
+
+cd $(poetry env info --path)/lib
+
+ls

@@ -24,6 +24,9 @@ jobs:
         name: install depends
         command: scripts/install-depends
     - run:
+        name: poetry install
+        command: poetry install
+    - run:
         name: run tests
         command: scripts/run-tests
 
