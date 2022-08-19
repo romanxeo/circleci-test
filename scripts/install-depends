@@ -1,11 +1,8 @@
 #!/bin/sh
 
-apk add docker
+apk add docker docker-compose
 apk add --no-cache python3 py3-pip
 apk add curl
-
-curl -L "https://raw.githubusercontent.com/docker/compose/1.23.2/contrib/completion/bash/docker-compose" -o /etc/bash_completion.d/docker-compose
-chmod +x /usr/local/bin/docker-compose
 
 docker-compose --version
 
