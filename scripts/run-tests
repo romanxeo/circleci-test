@@ -4,7 +4,7 @@ apk add docker docker-compose
 apk add --no-cache python3 py3-pip
 apk add curl
 
-sudo docker-compose  -f docker-compose.test.yml up
+docker-compose  -f docker-compose.test.yml up
 
 
 
