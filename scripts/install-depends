@@ -4,9 +4,10 @@ apk add docker
 apk add --no-cache python3 py3-pip
 apk add curl
 
-curl -sSL https://install.python-poetry.org | python3 -
+pip3 install --user poetry
 
-source $HOME/.poetry/env
+#curl -sSL https://install.python-poetry.org | python3 -
+#source $HOME/.poetry/env
 
 poetry --version
 
