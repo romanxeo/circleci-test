@@ -1,6 +1,9 @@
 #!/bin/sh
 
-apk add docker docker-compose openrc
+apk update
+
+
+apk add docker docker-compose
 
 docker-compose --version
 
@@ -8,7 +11,11 @@ ls
 
 rc-update add docker boot
 service docker start
-service docker status
+
+addgroup username docker
+
+docker pull ubuntu:latest
+
 
 docker run \
   --name test_db \
