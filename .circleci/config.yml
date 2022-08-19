@@ -9,7 +9,8 @@ aliases:
 jobs:
   test:
     machine:
-      image: linuxserver/docker-compose
+      image: tiangolo/docker-with-compose
+    working_directory: ~/repo
     steps:
     - checkout
     - run:
