@@ -16,6 +16,16 @@ poetry install
 
 source .venv/bin/activate
 
+ls
+
+cd .venv
+
+ls
+
+cd bin
+
+ls
+
 python3 -m pytest -s
 
 #poetry install
