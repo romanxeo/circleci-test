@@ -22,7 +22,7 @@ def test_get_all_todo():
 
 def test_get_todo():
     response = client.get("/todo/0")
-    assert response.status_code == 200
+    assert response.status_code == 201
     assert response.json() == data
 
 def test_update_todo():

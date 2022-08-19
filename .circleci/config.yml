@@ -4,10 +4,6 @@ aliases:
   - &install-depends
       run:
         name: install depends
-        command: scripts/install-depends
-  - &run-tests
-      run:
-        name: run tests
         command: scripts/run-tests
 
 jobs:
@@ -20,15 +16,6 @@ jobs:
     - run:
         name: permission
         command: chmod +x -R ./scripts
-    - run:
-        name: install depends
-        command: scripts/install-depends
-    - run:
-        name: ls
-        command: ls
-    - run:
-        name: python3 version
-        command: python3 --version
     - run:
         name: run tests
         command: scripts/run-tests

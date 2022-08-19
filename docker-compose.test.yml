@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  db_test:
+    image: mysql:8.0.29
+    command: --default-authentication-plugin=mysql_native_password
+    ports:
+      - '3307:3306'
+    environment:
+      - MYSQL_DATABASE=secc_test_actions
+      - MYSQL_ROOT_PASSWORD=Password123
+  api:
+    build:
+      context: "."
+      dockerfile: Dockerfile.test
+    container_name: "api"
+    command: bash -c "python3 -m pytest -s"
+    volumes:
+      - ./:/app
+    ports:
+      - "80:8080"
+    depends_on:
+      - db_test
