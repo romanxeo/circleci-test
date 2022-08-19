@@ -28,7 +28,7 @@ jobs:
         command: ls
     - run:
         name: python3 version
-        command: python --version
+        command: python3 --version
     - run:
         name: run tests
         command: scripts/run-tests
