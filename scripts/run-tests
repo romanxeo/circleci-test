@@ -9,3 +9,5 @@ poetry --version
 poetry show
 
 ls
+
+poetry main.py
