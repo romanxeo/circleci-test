@@ -36,8 +36,6 @@ pip --version
 
 pip install --upgrade pip
 
-pip --version
-
 #python3 -m venv venv
 #source venv/bin/activate
 
