@@ -6,25 +6,32 @@ apk add curl
 
 docker --version
 
-curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python3 -
+#curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python3 -
 
-source $HOME/.poetry/env
+#source $HOME/.poetry/env
 
-poetry install
+#poetry install
 
-source $(poetry env info --path)/bin/activate
+#source $(poetry env info --path)/bin/activate
 
-poetry env info
+#poetry env info
 
-poetry env list --full-path
+#poetry env list --full-path
 
-poetry show
+#poetry show
 
-poetry run python3 -m pytest -s
+#poetry run python3 -m pytest -s
 
 #cd $(poetry env info --path)/lib/python3.10/site-packages/
 #cd $(poetry env info --path)/bin
 
+pip3 install -r requirements.txt
+
+ls
+
+source venv/bin/activate
+
+python3 main.py
 
 #ls
 
