@@ -1,12 +1,14 @@
 #!/bin/sh
 
-apk add docker docker-compose
+apk add docker docker-compose openrc
 
 docker-compose --version
 
 ls
 
-rc-update add docker
+rc-update add docker boot
+service docker start
+service docker status
 
 docker run \
   --name test_db \
@@ -15,7 +17,6 @@ docker run \
   -e MYSQL_DATABASE=secc_test_actions \
   mysql:8.0.29 \
   --default-authentication-plugin=mysql_native_password
-  -v /var/run/docker.sock:/var/run/docker.sock
 
 
 
