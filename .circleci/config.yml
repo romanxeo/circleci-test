@@ -8,8 +8,8 @@ aliases:
 
 jobs:
   test:
-    machine:
-      image: alpine:latest
+    docker:
+      - image: tiangolo/docker-with-compose
     working_directory: ~/repo
     steps:
     - checkout
