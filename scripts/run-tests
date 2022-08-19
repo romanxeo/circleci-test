@@ -2,9 +2,10 @@
 
 python3 --version
 
+source $HOME/.poetry/env
+
 poetry --version
 
-
-
+poetry show
 
 ls

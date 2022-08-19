@@ -10,28 +10,21 @@ curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poet
 
 source $HOME/.poetry/env
 
-poetry env info
-
 poetry install
 
 source $(poetry env info --path)/bin/activate
-
-poetry install
 
 poetry env info
 
 poetry env list --full-path
 
-
-cat pyproject.toml
-
-cat poetry.lock
+poetry show
 
 #cd $(poetry env info --path)/lib/python3.10/site-packages/
-cd $(poetry env info --path)/bin
+#cd $(poetry env info --path)/bin
 
 
-ls
+#ls
 
 #python3 main.py
 
