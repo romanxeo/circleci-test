@@ -8,9 +8,8 @@ aliases:
 
 jobs:
   test:
-    docker:
-      - image: tmaier/docker-compose
-    working_directory: ~/repo
+    machine:
+      image: linuxserver/docker-compose
     steps:
     - checkout
     - run:
