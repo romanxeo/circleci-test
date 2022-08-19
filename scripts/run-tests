@@ -1,8 +1,9 @@
 #!/bin/sh
 
+python3 --version
+
 poetry --version
 
-python3 --version
 
 source $(poetry env info --path)/bin/activate
 
