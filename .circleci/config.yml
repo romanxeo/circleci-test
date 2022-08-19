@@ -9,7 +9,7 @@ aliases:
 jobs:
   test:
     docker:
-      - image: tiangolo/docker-with-compose
+      - image: docker:latest
     working_directory: ~/repo
     steps:
     - checkout
