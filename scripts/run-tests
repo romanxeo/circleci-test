@@ -9,13 +9,10 @@ docker --version
 docker-compose --version
 
 ls
-service dockerd status
-service docker status
+
 #chmod 666 /var/run/docker.sock
 
-docker run hello-world
-
-#docker-compose up
+docker-compose up
 
 
 
