@@ -8,6 +8,8 @@ ls
 
 #docker-compose -f docker-compose.test.yml up
 
+systemctl start docker
+
 docker run \
   --name test_db \
   -p 3307:3306 \
