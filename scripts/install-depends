@@ -1,8 +1,8 @@
 #!/bin/sh
 
-apt install docker
-apt install --no-cache python3 py3-pip
-apt install curl
+apt get install docker
+apt get install --no-cache python3 py3-pip
+apt get install curl
 
 docker --version
 curl --version
