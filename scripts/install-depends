@@ -10,6 +10,14 @@ curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poet
 
 source $HOME/.poetry/env
 
+poetry config virtualenvs.create true
+
+poetry install
+
+source .venv/bin/activate
+
+python3 -m pytest -s
+
 #poetry install
 
 #source $(poetry env info --path)/bin/activate
@@ -28,24 +36,20 @@ source $HOME/.poetry/env
 
 #pip3 install -r poetry.toml
 
-poetry export -f requirements.txt > requirements.txt
+#poetry export -f requirements.txt > requirements.txt
 
-cat requirements.txt
-
-pip --version
-
-pip install --upgrade pip
+#cat requirements.txt
 
 #python3 -m venv venv
 #source venv/bin/activate
 
-pip install -r  requirements.txt
+#pip install -r  requirements.txt
 
-ls
+#ls
 
 
 
-python3 -m pytest
+#
 
 #ls
 
