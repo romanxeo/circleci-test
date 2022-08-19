@@ -20,7 +20,7 @@ poetry env list --full-path
 
 poetry show
 
-poetry run python3 main.py
+poetry run python3 -m pytest -s
 
 #cd $(poetry env info --path)/lib/python3.10/site-packages/
 #cd $(poetry env info --path)/bin
