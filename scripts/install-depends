@@ -17,9 +17,10 @@ apk add curl
 
 #source $HOME/.poetry/env
 
-curl -sSL https://install.python-poetry.org | POETRY_HOME=/etc/poetry python3 -
 
-source $POETRY_HOME/bin/poetry
+curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python3 -
+
+source $HOME/bin/poetry
 
 poetry --version
 
