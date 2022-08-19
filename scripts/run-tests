@@ -10,9 +10,9 @@ docker-compose --version
 
 ls
 
-#chmod 666 /var/run/docker.sock
+chmod 666 /var/run/docker.sock
 
-docker compose up
+docker-compose up
 
 
 

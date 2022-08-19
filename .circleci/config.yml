@@ -9,7 +9,7 @@ aliases:
 jobs:
   test:
     docker:
-      - image: docker:latest
+      - image: tmaier/docker-compose
     working_directory: ~/repo
     steps:
     - checkout
