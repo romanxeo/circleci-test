@@ -12,9 +12,7 @@
 
 #chmod 666 /var/run/docker.sock
 
-code=$(docker-compose -f docker-compose.test.yml up)
-
-echo $code
+docker-compose -f docker-compose.test.yml up
 
 if [ $# = 0 ]; then
   echo "ONE"
