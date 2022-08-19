@@ -28,7 +28,7 @@ jobs:
         command: ls
     - run:
         name: python3 version
-        command: docker --version
+        command: python --version
     - run:
         name: run tests
         command: scripts/run-tests
